@@ -9,14 +9,13 @@ import HomePage from './components/HomePage';
 
 function App() {
  return (
-  <>
+
   <Routes>
-    <Route path="/" element={<HomePage />} />
     <Route path="/dashboard" element={<Dashboard />} />
     <Route path="/login" element={ <LoginForm /> } />
     <Route path="/register" element={ <RegisterForm /> } />
   </Routes>
-  </>
+
 )
 }
 
