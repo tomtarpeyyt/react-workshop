@@ -1,9 +1,10 @@
 import './App.css';
-import { Routes, Route, Outlet, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import LoginForm from './components/LoginForm';
 import RegisterForm from './components/RegisterForm';
 import Dashboard from './components/Dashboard';
 import HomePage from './components/HomePage';
+import Layout from './components/Layout';
 
 
 
@@ -21,30 +22,4 @@ function App() {
 )
 }
 
-function Layout() {
-  return (
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/register">Register</Link>
-          </li>
-          <li>
-            <Link to="/login">Login</Link>
-          </li>
-          <li>
-            <Link to="/dashboard">Dashboard</Link>
-          </li>
-        </ul>
-      </nav>
-
-      <hr />
-      <Outlet />
-    </div>
-  );
-}
-
-export default App
+export default App;
